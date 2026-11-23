@@ -1,0 +1,6 @@
+docker build -t meu-sistema:1.0 .
+docker run -d --name sistema-web -p 8080:5000 meu-sistema:1.0
+docker ps
+docker logs sistema-web
+docker stop sistema-web
+docker rm sistema-web
